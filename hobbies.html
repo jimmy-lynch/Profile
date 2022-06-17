@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang = en>
+    <head>
+        <meta charset="utf-8">
+        <title>Hobbies</title>
+
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Lato">
+
+        <style type="text/css">
+            .container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding-left: 250px;
+                padding-right: 250px;
+                margin-top: 45px;
+                padding-top: 10px;
+            
+            }
+
+            .hobbyimage {
+                width: 250px;
+                height: auto;
+            }
+
+            .hobby {
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .head {
+                font-family: Lato;
+                font-size: 30px;
+                padding-top: 25px;
+                font-weight: bolder;
+                font-variant: small-caps;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="nav">
+            <a href="index.html"  class="nav_options">
+                <img onmouseenter="highlight(this)" onmouseleave="unhighlight(this)" src="img/homereg.png" class="logo">
+            </a>
+            <script>
+                function highlight(image) {
+                    image.src = "img/homehover.png";
+                }
+                function unhighlight(image) {
+                    image.src = "img/homereg.png";
+                }
+            </script>
+            <a href="education.html" class="nav_options">
+                education
+            </a>
+            <a href="hobbies.html" class="nav_options">
+                hobbies
+            </a>
+            <a href="work.html" class="nav_options">
+                work
+            </a>
+            <a href="fhock.html" class="nav_options">
+                field hockey
+            </a>
+        </div>
+
+        <div class="container">
+            <div class="hobby">
+                <img src="img/hobbies/fitness.png" class="hobbyimage">
+                <div class="head">
+                fitness
+                </div>
+            </div>
+            <div class="hobby">
+                <img src="img/hobbies/Fhock.png" class="hobbyimage">
+                <div class="head">
+                    field hockey
+                </div>
+            </div>
+            <div class="hobby">
+                <img src="img/hobbies/baking.png" class="hobbyimage">
+                <div class="head">
+                    baking
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hobby">
+                <img src="img/hobbies/thrifting.png" class="hobbyimage">
+                <div class="head">
+                    thrifting
+                </div>
+            </div>
+            <div class="hobby">
+                <img src="img/hobbies/music.png" class="hobbyimage">
+                <div class="head">
+                    going to music festivals                   
+                </div>
+            </div>
+            <div class="hobby">
+                <img src="img/hobbies/friends.png" class="hobbyimage">
+                <div class="head">
+                    hanging with friends
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

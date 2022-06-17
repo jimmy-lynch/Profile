@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang = en>
+    <head>
+        <meta charset="utf-8">
+        <title>Field Hockey</title>
+
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Lato">
+
+        <style type="text/css">
+            .slideshow {
+                display: flex;
+                flex-direction: row;
+                width: 960px;
+                height: 636px; 
+                margin-left: auto;
+                margin-top: 30px;
+                margin-right: auto;
+                justify-content: center;
+                align-content: center;
+
+                text-align: center;
+                overflow: hidden;
+                flex-direction: column;
+                padding-left: auto;
+            }
+
+            .slides {
+                display: inline-flex;
+            }
+            
+            .slide1{ 
+                background-color: #000000;
+                width: 960px;
+                height: auto;
+            }
+            
+            .fhockimg {
+                width: 960px;
+                height: width;
+                justify-content: center;
+            }
+
+            .button {
+                display: block;
+                width: 30px;
+                border-radius: 15px;
+                height: 30px;
+                margin-right: 15px;
+                margin-top: 10px;
+                background-color: #808f87;
+                text-decoration: none;
+                color: white;
+            }
+
+            #buttons {
+                display: flex;
+                justify-content: center;
+            }
+
+            .box {
+                filter: drop-shadow(0px 0px 3px rgba(0,0,0,.6));
+            }
+
+            .button:hover {
+                background-color: #303633;
+            }
+
+            #infoBox {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+
+                margin-top: 50px;
+                margin-right: 3%;
+                margin-left: 3%;
+                gap: 15%;
+                text-align: left;
+            }
+
+            li::before {
+                content: "»";
+                padding-right: 5px;
+                font-size: 20px;
+                list-style-position: inside;
+            }
+
+            ul {
+                list-style: none;
+                list-style-position: inside;
+                margin-left: 0;
+                padding-left: 1em;
+                text-indent: -1em;
+                margin-top: 2px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="nav">
+            <a href="index.html"  class="nav_options">
+                <img onmouseenter="highlight(this)" onmouseleave="unhighlight(this)" src="img/homereg.png" class="logo">
+            </a>
+            <script>
+                function highlight(image) {
+                    image.src = "img/homehover.png";
+                }
+                function unhighlight(image) {
+                    image.src = "img/homereg.png";
+                }
+            </script>
+            <a href="education.html" class="nav_options">
+                education
+            </a>
+            <a href="hobbies.html" class="nav_options">
+                hobbies
+            </a>
+            <a href="work.html" class="nav_options">
+                work
+            </a>
+            <a href="fhock.html" class="selected">
+                field hockey
+            </a>
+        </div>
+
+
+        
+        <div class ="slideshow box">
+            <div class="slides">
+                <div id="slide1">
+                    <img src="img/fhock/DSC_2320.JPG" class="fhockimg">
+                </div>
+
+                <div id="slide2">
+                    <img src="img/fhock/DSC_2375.JPG" class="fhockimg">
+                </div>
+
+                <div id="slide3">
+                    <img src="img/fhock/DSC_2382.JPG" class="fhockimg">
+                </div>
+
+                <div id="slide4">
+                    <img src="img/fhock/DSC_2412.JPG" class="fhockimg">
+                </div>
+
+                <div id="slide5">
+                    <img src="img/fhock/DSC_2413.JPG" class="fhockimg">
+                </div>
+
+                <div id="slide6">
+                    <img src="img/fhock/DSC_2417.JPG" class="fhockimg">
+                </div>
+
+                <div id="slide7">
+                    <img src="img/fhock/DSC_2418.JPG" class="fhockimg">
+                </div>
+            </div>
+        </div>
+
+        <div id="buttons">
+            <a href="#slide1" class="button" id="button1" onclick="myScript(this.id, this.className)" ></a>
+            <a href="#slide2" class="button" id="button2" onclick="myScript(this.id, this.className)" ></a>
+            <a href="#slide3" class="button" id="button3" onclick="myScript(this.id, this.className)" ></a>
+            <a href="#slide4" class="button" id="button4" onclick="myScript(this.id, this.className)" ></a>
+            <a href="#slide5" class="button" id="button5" onclick="myScript(this.id, this.className)" ></a>
+            <a href="#slide6" class="button" id="button6" onclick="myScript(this.id, this.className)" ></a>
+            <a href="#slide7" class="button" id="button7" onclick="myScript(this.id, this.className)" ></a>
+            <script type="text/javascript">
+                function myScript(btn, x) {
+                    buttons = document.getElementsByClassName(x);
+                    for (var i = 0; i < buttons.length; i++) {
+                        buttons[i].style.backgroundColor = "#808f87";
+                    }
+
+                    var property = document.getElementById(btn);
+                    property.style.backgroundColor = "#303633";
+                }
+            </script>
+        </div>
+
+        <div id="infoBox">
+            <div>
+                <h3 class="subheader">Accolades</h3>
+                <ul class="sub-info">
+                    <li class="bullets">Practice Player & Manager for UNCs Division I team</li>
+                    <li class="bullets">Invited to USA Junior National Camp last summer</li>
+                    <li class="bullets">Played against Chile & Mexico in a Tri-series for the USA U-21 team last summer</li>
+                    <li class="bullets">Club player with Centercourt Elite and East Coast High Performance</li>
+                </ul>
+                <br>
+            </div>
+            <div>
+                <h3 class="subheader">Playing Information</h3>
+                <ul class="sub-info">
+                    <li class="bullets">Position: Forward and Midfielder</li>
+                    <li class="bullets">Stick: Ritual Velocity 95</li>
+                    <li class="bullets">Pregame Snack: Fruit Snacks</li>
+                    <li class="bullets">Goal: Play in the Olympics</li>
+                </ul>
+                <br>
+            </div>
+        </div>
+
+    </body>
+</html>

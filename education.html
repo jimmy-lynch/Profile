@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang = en>
+    <head>
+        <meta charset="utf-8">
+        <title>Education</title>
+
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" href="https://fonts.google.com/specimen/Lato">
+
+        <style type="text/css">
+        .date {
+            background: #262b29;
+            color: #00af41;
+            padding-bottom: .25em;
+            position: relative;
+            left: -.25rem;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="nav">
+            <a href="index.html"  class="nav_options">
+                <img onmouseenter="highlight(this)" onmouseleave="unhighlight(this)" src="img/homereg.png" class="logo">
+            </a>
+            <script>
+                function highlight(image) {
+                    image.src = "img/homehover.png";
+                }
+                function unhighlight(image) {
+                    image.src = "img/homereg.png";
+                }
+            </script>
+            <a href="education.html" class="selected">
+                education
+            </a>
+            <a href="hobbies.html" class="nav_options">
+                hobbies
+            </a>
+            <a href="work.html" class="nav_options">
+                work
+            </a>
+            <a href="fhock.html" class="nav_options">
+                field hockey
+            </a>
+        </div>
+
+        <div class="article">
+            <dl>
+                <div class="cell">
+                    <div class="cell_content odd">
+                        <div class="date dOdd">
+                            September 2015
+                        </div>
+                        <div class="info">
+                            Started 9th grade at West Essex
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="cell_content even">
+                        <div class="date dEven">
+                            June 2019
+                        </div>
+                        <div class="info iEven">
+                            Graduated West Essex 
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="cell_content odd">
+                        <div class="date dOdd">
+                            August 2019
+                        </div>
+                        <div class="info">
+                            Began at Quinnipiac University
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="cell_content even">
+                        <div class="date dEven">
+                            January 2020
+                        </div>
+                        <div class="info iEven">
+                            Switched from Graphic & Interactive Design to Computer Science
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="cell_content odd oddL">
+                        <div class="date dOdd dOddL">
+                            August 2021
+                        </div>
+                        <div class="info">
+                            Transferred to University of North Carolina at Chapel Hill
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="cell_content even evenL">
+                        <div class="date dEven dEvenL">
+                            May 2024
+                        </div>
+                        <div class="info iEven iLast">
+                            Expeected to Graduate (hopefully) Summa Cum Laude
+                        </div>
+                    </div>
+                </div>
+            </dl>
+        </div>
+    </body>
+</html>
